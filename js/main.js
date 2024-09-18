@@ -1,7 +1,7 @@
 // functionality for showing/hiding the comments section
 
-const showHideBtn = document.querySelector('.show-hide');
-const commentWrapper = document.querySelector('.comment-wrapper');
+export const showHideBtn = document.querySelector('.show-hide');
+export const commentWrapper = document.querySelector('.comment-wrapper');
 
 commentWrapper.style.display = 'none';
 
@@ -21,14 +21,14 @@ showHideBtn.onclick = function() {
 const form = document.querySelector('.comment-form');
 const nameField = document.querySelector('#name');
 const commentField = document.querySelector('#comment');
-const list = document.querySelector('.comment-container');
+export const list = document.querySelector('.comment-container');
 
 form.onsubmit = function(e) {
   e.preventDefault();
   submitComment();
 };
 
-function submitComment() {
+export function submitComment() {
   const listItem = document.createElement('li');
   const namePara = document.createElement('p');
   const commentPara = document.createElement('p');
