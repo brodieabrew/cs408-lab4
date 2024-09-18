@@ -22,7 +22,7 @@ Visual Studio Code command palette (F1) to run the Live Preview Server.
 I used an online contrast checker and found that the contrast ratio was [2.79:1](https://webaim.org/resources/contrastchecker/?fcolor=2A2A2A&bcolor=008000), which was a fail for accessibility. By changing the background color to white, I was able to improve the contrast ratio to [14.35:1](https://webaim.org/resources/contrastchecker/?fcolor=2A2A2A&bcolor=FFFFFF).
 
 ### Semantic HTML
-1. I honestly didn't have any problems navigating the site using a keyboard. Using tab, I was able to quickly navigate to all of the interactive elements of the site. Using enter and the spacebar worked correctly. The arrow keys also allowed for me to scroll up and down the page correctly. Obviously the HTML is semantically a mess at this point, but the keybaord navigation works fine.
+1. The only problems with navigating the site using a keyboard is that the some of the comment functionality that should be interactable via the keyboard is not. Everything else seems to work fine.
 2. I updated the elements within the main article element to be more fitting. For example, I changed the font elements to use different header elements (e.g, h2 and h3). I also wrapped most text in paragraph elements. These changes, in combination with updating the CSS styling for header elements, should make the website much easier to navigate for things like screen readers.
 3. The navigation menu should simply be updated to use a nav element instead of a div element with a custom defined "nav" class. This also required some updates to the CSS to style nav elements instead, but that was also very simple.
 
@@ -45,6 +45,8 @@ To improve the accessibility of the table I used the th elements to specify the 
 
 ### Other Considerations
 One thing that I did to make the website more accessible was replace the remaining font elements with proper header elements. This should make different sections of the website clearer for screen readers. Another thing that I did to make the website more accessible was replace the div element used for the "Related" section to use a section element. This should make it more clear that the "Related" section is a separate section.
+
+A good idea for the future would be to make the website more mobile accessible. In its current state, the site is primarily tailored towards larger devices, meaning that the site will likely display incorrectly on smaller devices.
 
 ## Sources and Credits
 * [MDN](https://developer.mozilla.org/en-US/)
