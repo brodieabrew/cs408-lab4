@@ -1,4 +1,4 @@
-# Web Dev Starter Code
+# CS408 Lab 4
 
 ## Overview
 This project creates a website using HTML, CSS, and JavaScript.
